@@ -33,7 +33,7 @@ header::after {
 
 .logo-name img {
     width: 40px;   /* Or whatever size you want */
-    height: auto;  /* Keeps the image's aspect ratio */
+    height: 20px;  /* Keeps the image's aspect ratio */
     margin-right: 8px;
 }
 
