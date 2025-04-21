@@ -28,13 +28,13 @@ header::after {
 
 .logo-name {
     display: flex;
-    align-items: Middle;
+    align-items: Center;
 }
 
 .logo-name img {
-    width: auto;   /* Or whatever size you want */
-    height: 40px;  /* Keeps the image's aspect ratio */
-    margin-right: 10px;
+    width: 40px;   /* Or whatever size you want */
+    height: 10px;  /* Keeps the image's aspect ratio */
+    display: block; /* Removes any extra vertical whitespace */
 }
 
 nav ul {
