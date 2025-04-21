@@ -28,7 +28,7 @@ header::after {
 
 .logo-name {
     display: flex;
-    align-items: Bottom;
+    align-items: Middle;
 }
 
 .logo-name img {
