@@ -33,3 +33,19 @@ if (enquiryForm) {
     });
   });
 }
+
+
+// Example: Save time records
+async function saveTimeRecords(records) {
+  await fetch('https://your-backend-domain.com/api/timeRecords', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(records)
+  });
+}
+
+// Example: Load time records
+async function loadTimeRecords() {
+  const resp = await fetch('https://your-backend-domain.com/api/timeRecords');
+  return await resp.json();
+}
