@@ -199,17 +199,18 @@ if (enquiryForm) {
 }
 
 
-// Example: Save time records
+// Save time records
 async function saveTimeRecords(records) {
-  await fetch('https://your-backend-domain.com/api/timeRecords', {
+  await fetch(`${BACKEND_URL}/api/timeRecords`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(records)
   });
 }
 
-// Example: Load time records
+// Load time records
 async function loadTimeRecords() {
-  const resp = await fetch('https://your-backend-domain.com/api/timeRecords');
+  const resp = await fetch(`${BACKEND_URL}/api/timeRecords`);
   return await resp.json();
 }
+
